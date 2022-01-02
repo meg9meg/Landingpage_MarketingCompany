@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
@@ -13,29 +16,32 @@
 <body>
     <div class="wrapper">
         <nav class="menu">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#offer">Offer</a>
-            <a href="#pros">Benefits</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
+                <i class="fas fa-bars menu-toggle"></i>
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#welcome">Home</a></li>
+                <li class="menu-item"><a href="#about">About</a></li>
+                <li class="menu-item"><a href="#offer">Offer</a></li>
+                <li class="menu-item"><a href="#pros">Benefits</a></li>
+                <li class="menu-item"><a href="#team">Team</a></li>
+                <li class="menu-item"><a href="#contact">Contact</a></li>
+            </ul>           
         </nav>
-        <div class="welcome">
+        <div class="welcome" id="welcome">
             <div class="hello">
                 <h1 class="company">J&K Marketing Masters</h1>
                 <h2 class="motto">Success is making those who believed in you look brilliant</h2>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <div class="about-info">
                 <h2 class="about-title">About our company</h2>
-                <p class="about-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, eaque velit vero ipsum qui rerum, dolorem magnam voluptates aliquid dolor saepe repudiandae autem vitae at ullam, aut minus. Hic, similique! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, repellendus id maxime accusantium sed, quis distinctio, a asperiores illum eius tempore inventore suscipit omnis labore iste ipsam accusamus nostrum vitae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni minima quas, natus repellendus magnam nisi impedit quo iure veniam expedita ut eveniet adipisci porro sint, labore ab? Sed, minus deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dignissimos culpa rem, quod voluptates nihil provident corporis temporibus necessitatibus aperiam molestias sint mollitia! Dolorum quia a explicabo magnam esse eligendi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt perferendis obcaecati, culpa ratione quis facere itaque tempore vero quas reiciendis impedit fugit nesciunt est neque in cumque ducimus quasi? Soluta.</p>
+                <p class="about-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, eaque velit vero ipsum qui rerum, dolorem magnam voluptates aliquid dolor saepe repudiandae autem vitae at ullam, aut minus. Hic, similique! <br>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, repellendus id maxime accusantium sed, quis distinctio, a asperiores illum eius tempore inventore suscipit omnis labore iste ipsam accusamus nostrum vitae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Magni minima quas, natus repellendus magnam nisi impedit quo iure veniam expedita ut eveniet adipisci porro sint, labore ab? Sed, minus deleniti. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus dignissimos culpa rem, quod voluptates nihil provident corporis temporibus necessitatibus aperiam molestias sint mollitia! Dolorum quia a explicabo magnam esse eligendi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt perferendis obcaecati, culpa ratione quis facere itaque tempore vero quas reiciendis impedit fugit nesciunt est neque in cumque ducimus quasi? Soluta.</p>
             </div>
             <div class="about-img">
                 <img src="https://splashdev.at/wp-content/uploads/2021/04/Business.jpg" alt="">
             </div>
         </div>
-        <div class="offer">
+        <div class="offer" id="offer">
             <h1 class="offer-title">What we can offer?</h1>
             <div class="offer-item offer-item-icon">
                 <i class="fas fa-chart-line"></i>
@@ -58,7 +64,7 @@
                 <h1 class="offer-item-text">Affiliate marketing</h1>
             </div>
         </div>
-        <div class="pros">
+        <div class="pros" id="pros">
             <h1 class="pros-title">Why Choose Us</h1>
             <h2 class="pros-quote">A choice that makes the difference</h2>
             <div class="pros-item">
@@ -83,7 +89,7 @@
                 <p class="pros-item-text">Online marketing supports building a group of loyal customers who feel connected with your brand. Such people not only regularly return for your products, but also recommend them to their friends. </p>
             </div>
         </div>
-        <div class="team">
+        <div class="team" id="team">
             <div class="team-text">
                 <h1 class="team-title">Meet our Team</h1>
                 <hr class="team-space">
@@ -117,7 +123,7 @@
                 </div>
             </div>
         </div>
-        <footer class="contact">
+        <footer class="contact" id="contact">
             <div class="contact-data">
                 <p class="contact-data-email">jkmarketing@contact.com</p>
                 <p class="contact-data-phone">+48 123 123 123</p>
@@ -136,6 +142,6 @@
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script></script>
+    <script src="script.js"></script>
 </body>
 </html>

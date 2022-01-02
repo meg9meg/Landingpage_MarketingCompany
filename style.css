@@ -15,8 +15,15 @@
     filter: alpha(opacity=50);
     top: 0;
     width: 100%;
+    height: auto;
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
+    display: flex;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
 }
 
 .menu a {
@@ -28,11 +35,40 @@
     text-decoration: none;
     font-size: 18px;
     opacity: 1;
+    width: 100%;
 }
 
 .menu a:hover {
     color: gray;
 }
+
+.menu-toggle {
+    display: none;
+    color: gainsboro;
+    font-size: 35px;
+    padding: 10px 15px;
+    align-self: flex-end;
+    cursor: pointer;
+    top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-list,
+    .menu {
+        flex-direction: column;
+    }
+    .menu-list {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+.show {
+    display: flex;
+}
+
 /*-----WELCOME PAGE-----*/
 
 .company {
@@ -78,10 +114,16 @@
     color:gainsboro;
 }
 
+@media screen and (max-width: 600px)  {
+    .company {
+        font-size: 4rem;
+    }
+}
+
 /*ABOUT SECTION*/
 .about {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color:gainsboro;
     display: flex;
     flex-direction: row;
@@ -119,6 +161,7 @@
     font-size: 1.1rem;
     font-weight: 100;
     text-align: justify;
+    flex: 1 0 auto;
 }
 
 .about-img img {
@@ -151,6 +194,9 @@
     .about-title {
         font-size: 35px;
     }
+    .about-desc {
+        font-size: 0.9rem;
+    }
 }
 
 /*OFFER*/
@@ -180,6 +226,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: 0.3s;
 }
 
 .offer-item-icon {
@@ -193,6 +240,10 @@
     text-align: center;
     padding-top: 50px;
     letter-spacing: 0.8px;
+}
+
+.offer-item:hover {
+    color: #70d6ff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -213,6 +264,7 @@
     }
     .offer-item-text {
         font-size: 1.2rem;
+        padding-top: 20px;
     }
 }
 
@@ -248,11 +300,12 @@
 .pros-item {
     border-radius: 5px;
     width: 80%;
-    height: 15%;
+    height: 115%;
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding-top: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.2s;
 }
@@ -280,7 +333,6 @@
     font-weight: 200;
     font-size: 17px;
     padding: 0 35px;
-    
 }
 
 .pros-item:hover {
@@ -307,6 +359,7 @@
     }
     .pros-item-text {
         font-size: 15px;
+        padding: 0 5px;
     }
 }
 
