@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    max-width: 100vw; 
 }
 
 .wrapper {
@@ -14,8 +15,8 @@
     opacity: 0.7; 
     filter: alpha(opacity=50);
     top: 0;
-    width: 100%;
     height: auto;
+    width: 100%;
     position: fixed;
     z-index: 9999;
     display: flex;
@@ -142,7 +143,7 @@
 
 .about-title,
 .about-desc {
-    padding: 0 50px;
+    margin: 0 50px;
 }
 
 .about-title {
@@ -155,8 +156,9 @@
 }
 
 .about-desc {
-    padding-top: 70px;
+    margin-top: 70px;
     height: 80%;
+    margin-bottom: 70px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.1rem;
     font-weight: 100;
@@ -202,7 +204,7 @@
 /*OFFER*/
 .offer {
     width: 100%;
-    height: calc(100vh - 100px);
+    min-height: 100vh;
     background-color:black;
     color: gainsboro;
     display: flex;
@@ -271,7 +273,7 @@
 /*PROS*/
 .pros {
     width: 100%;
-    height: calc(100vh - 70px);
+    min-height: 100vh;
     background-color: gainsboro;
     padding-top: 70px;
     padding-bottom: 30px;
@@ -300,12 +302,13 @@
 .pros-item {
     border-radius: 5px;
     width: 80%;
-    height: 115%;
+    height: 10vh;
     text-align: justify;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-top: 10px;
+    padding-bottom: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: 0.2s;
 }
